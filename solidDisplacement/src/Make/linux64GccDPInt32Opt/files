@@ -1,0 +1,7 @@
+SOURCE += MMA/MMA.C
+
+SOURCE += tractionDisplacement/tractionDisplacementFvPatchVectorField.C
+
+SOURCE += MTO_SolidDisplacement.C
+
+EXE = $(FOAM_USER_APPBIN)/MTO_SolidDisplacement

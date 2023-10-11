@@ -1,0 +1,483 @@
+Making dependency list for source file MTO_SolidDisplacement.C
+could not open file mpi.h for source file MTO_SolidDisplacement.C due to No such file or directory
+mpic++ -std=c++14 -m64 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -I. -IsolidDisplacementThermo -IderivedFvPatchFields/tractionDisplacement -IderivedFvPatchFields/hydrostaticDisplacement -I/opt/openfoam10/src/physicalProperties/lnInclude -I/opt/openfoam10/src/thermophysicalModels/basic/lnInclude -I/opt/openfoam10/src/thermophysicalModels/solidThermo/lnInclude -I/opt/openfoam10/src/finiteVolume/lnInclude -I/opt/openfoam10/src/meshTools/lnInclude -IlnInclude -I. -I/opt/openfoam10/src/OpenFOAM/lnInclude -I/opt/openfoam10/src/OSspecific/POSIX/lnInclude   -fPIC -c MTO_SolidDisplacement.C -o Make/linux64GccDPInt32Opt/MTO_SolidDisplacement.o
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:193,
+                 from /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h:2887,
+                 from MMA/MMA.h:4,
+                 from MTO_SolidDisplacement.C:8:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/datatype.h: In member function ‘bool MPI::Datatype::operator==(const MPI::Datatype&) const’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/datatype.h:81:52: warning: use of old-style cast to ‘bool’ [-Wold-style-cast]
+   81 |     { return (bool) (mpi_datatype == a.mpi_datatype); }
+      |                                                    ^
+      |              ------
+      |              static_cast<bool> (                    )
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/datatype.h: In member function ‘bool MPI::Datatype::operator!=(const MPI::Datatype&) const’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/datatype.h:84:33: warning: use of old-style cast to ‘bool’ [-Wold-style-cast]
+   84 |     { return (bool) !(*this == a); }
+      |                                 ^
+      |              ------
+      |              static_cast<bool> ( )
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:220,
+                 from /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h:2887,
+                 from MMA/MMA.h:4,
+                 from MTO_SolidDisplacement.C:8:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/request.h: In member function ‘bool MPI::Request::operator==(const MPI::Request&)’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/request.h:72:47: warning: use of old-style cast to ‘bool’ [-Wold-style-cast]
+   72 |   { return (bool)(mpi_request == a.mpi_request); }
+      |                                               ^
+      |            ------
+      |            static_cast<bool> (                 )
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/request.h: In member function ‘bool MPI::Request::operator!=(const MPI::Request&)’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/request.h:74:30: warning: use of old-style cast to ‘bool’ [-Wold-style-cast]
+   74 |   { return (bool)!(*this == a); }
+      |                              ^
+      |            ------
+      |            static_cast<bool> ()
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:221,
+                 from /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h:2887,
+                 from MMA/MMA.h:4,
+                 from MTO_SolidDisplacement.C:8:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/group.h: In member function ‘bool MPI::Group::operator==(const MPI::Group&)’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/group.h:72:83: warning: use of old-style cast to ‘bool’ [-Wold-style-cast]
+   72 |   inline bool operator== (const Group &a) { return (bool)(mpi_group == a.mpi_group); }
+      |                                                                                   ^
+      |                                                    ------
+      |                                                    static_cast<bool> (             )
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/group.h: In member function ‘bool MPI::Group::operator!=(const MPI::Group&)’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/group.h:73:70: warning: use of old-style cast to ‘bool’ [-Wold-style-cast]
+   73 |   inline bool operator!= (const Group &a) { return (bool)!(*this == a); }
+      |                                                                      ^
+      |                                                    ------
+      |                                                    static_cast<bool> ()
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:222,
+                 from /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h:2887,
+                 from MMA/MMA.h:4,
+                 from MTO_SolidDisplacement.C:8:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/comm.h: In member function ‘bool MPI::Comm_Null::operator==(const MPI::Comm_Null&) const’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/comm.h:74:45: warning: use of old-style cast to ‘bool’ [-Wold-style-cast]
+   74 |     return (bool) (mpi_comm == data.mpi_comm); }
+      |                                             ^
+      |            ------
+      |            static_cast<bool> (               )
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/comm.h: In member function ‘bool MPI::Comm_Null::operator!=(const MPI::Comm_Null&) const’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/comm.h:77:34: warning: use of old-style cast to ‘bool’ [-Wold-style-cast]
+   77 |     return (bool) !(*this == data);}
+      |                                  ^
+      |            ------
+      |            static_cast<bool> (    )
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:225,
+                 from /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h:2887,
+                 from MMA/MMA.h:4,
+                 from MTO_SolidDisplacement.C:8:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/errhandler.h: In member function ‘bool MPI::Errhandler::operator==(const MPI::Errhandler&)’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/errhandler.h:42:53: warning: use of old-style cast to ‘bool’ [-Wold-style-cast]
+   42 |     return (bool)(mpi_errhandler == a.mpi_errhandler); }
+      |                                                     ^
+      |            ------
+      |            static_cast<bool> (                       )
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/errhandler.h: In member function ‘bool MPI::Errhandler::operator!=(const MPI::Errhandler&)’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/errhandler.h:45:30: warning: use of old-style cast to ‘bool’ [-Wold-style-cast]
+   45 |     return (bool)!(*this == a); }
+      |                              ^
+      |            ------
+      |            static_cast<bool> ()
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:269,
+                 from /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h:2887,
+                 from MMA/MMA.h:4,
+                 from MTO_SolidDisplacement.C:8:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/datatype_inln.h: In member function ‘virtual MPI::Datatype MPI::Datatype::Create_hvector(int, int, MPI::Aint) const’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/datatype_inln.h:90:63: warning: use of old-style cast to ‘MPI_Aint’ {aka ‘long int’} [-Wold-style-cast]
+   90 |   (void)MPI_Type_create_hvector(count, blocklength, (MPI_Aint)stride,
+      |                                                               ^~~~~~
+      |                                                     ----------------
+      |                                                     static_cast<MPI_Aint> (stride)
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h:2887,
+                 from MMA/MMA.h:4,
+                 from MTO_SolidDisplacement.C:8:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/datatype_inln.h: In member function ‘virtual bool MPI::Datatype::Get_attr(int, void*) const’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:152:47: warning: use of old-style cast to ‘bool’ [-Wold-style-cast]
+  152 | #define OPAL_INT_TO_BOOL(VALUE)  ((bool)(VALUE))
+      |                                               ^
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/datatype_inln.h:349:10: note: in expansion of macro ‘OPAL_INT_TO_BOOL’
+  349 |   return OPAL_INT_TO_BOOL(ret);
+      |          ^~~~~~~~~~~~~~~~
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/functions_inln.h: In function ‘bool MPI::Is_initialized()’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:152:47: warning: use of old-style cast to ‘bool’ [-Wold-style-cast]
+  152 | #define OPAL_INT_TO_BOOL(VALUE)  ((bool)(VALUE))
+      |                                               ^
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/functions_inln.h:143:10: note: in expansion of macro ‘OPAL_INT_TO_BOOL’
+  143 |   return OPAL_INT_TO_BOOL(t);
+      |          ^~~~~~~~~~~~~~~~
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/functions_inln.h: In function ‘bool MPI::Is_finalized()’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:152:47: warning: use of old-style cast to ‘bool’ [-Wold-style-cast]
+  152 | #define OPAL_INT_TO_BOOL(VALUE)  ((bool)(VALUE))
+      |                                               ^
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/functions_inln.h:151:10: note: in expansion of macro ‘OPAL_INT_TO_BOOL’
+  151 |   return OPAL_INT_TO_BOOL(t);
+      |          ^~~~~~~~~~~~~~~~
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/functions_inln.h: In function ‘bool MPI::Is_thread_main()’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:152:47: warning: use of old-style cast to ‘bool’ [-Wold-style-cast]
+  152 | #define OPAL_INT_TO_BOOL(VALUE)  ((bool)(VALUE))
+      |                                               ^
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/functions_inln.h:184:10: note: in expansion of macro ‘OPAL_INT_TO_BOOL’
+  184 |   return OPAL_INT_TO_BOOL(flag == 1);
+      |          ^~~~~~~~~~~~~~~~
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/request_inln.h: In member function ‘virtual bool MPI::Request::Test(MPI::Status&)’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:152:47: warning: use of old-style cast to ‘bool’ [-Wold-style-cast]
+  152 | #define OPAL_INT_TO_BOOL(VALUE)  ((bool)(VALUE))
+      |                                               ^
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/request_inln.h:49:10: note: in expansion of macro ‘OPAL_INT_TO_BOOL’
+   49 |   return OPAL_INT_TO_BOOL(t);
+      |          ^~~~~~~~~~~~~~~~
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/request_inln.h: In member function ‘virtual bool MPI::Request::Test()’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:152:47: warning: use of old-style cast to ‘bool’ [-Wold-style-cast]
+  152 | #define OPAL_INT_TO_BOOL(VALUE)  ((bool)(VALUE))
+      |                                               ^
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/request_inln.h:57:10: note: in expansion of macro ‘OPAL_INT_TO_BOOL’
+   57 |   return OPAL_INT_TO_BOOL(t);
+      |          ^~~~~~~~~~~~~~~~
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:271,
+                 from /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h:2887,
+                 from MMA/MMA.h:4,
+                 from MTO_SolidDisplacement.C:8:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/request_inln.h: In static member function ‘static bool MPI::Request::Testany(int, MPI::Request*, int&, MPI::Status&)’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/request_inln.h:107:41: warning: use of old-style cast to ‘bool’ [-Wold-style-cast]
+  107 |   return (bool)(flag != 0 ? true : false);
+      |                                         ^
+      |          ------
+      |          static_cast<bool> (             )
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h:2887,
+                 from MMA/MMA.h:4,
+                 from MTO_SolidDisplacement.C:8:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/request_inln.h: In static member function ‘static bool MPI::Request::Testany(int, MPI::Request*, int&)’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:152:47: warning: use of old-style cast to ‘bool’ [-Wold-style-cast]
+  152 | #define OPAL_INT_TO_BOOL(VALUE)  ((bool)(VALUE))
+      |                                               ^
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/request_inln.h:124:10: note: in expansion of macro ‘OPAL_INT_TO_BOOL’
+  124 |   return OPAL_INT_TO_BOOL(flag);
+      |          ^~~~~~~~~~~~~~~~
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/request_inln.h: In static member function ‘static bool MPI::Request::Testall(int, MPI::Request*, MPI::Status*)’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:152:47: warning: use of old-style cast to ‘bool’ [-Wold-style-cast]
+  152 | #define OPAL_INT_TO_BOOL(VALUE)  ((bool)(VALUE))
+      |                                               ^
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/request_inln.h:181:10: note: in expansion of macro ‘OPAL_INT_TO_BOOL’
+  181 |   return OPAL_INT_TO_BOOL(flag);
+      |          ^~~~~~~~~~~~~~~~
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/request_inln.h: In static member function ‘static bool MPI::Request::Testall(int, MPI::Request*)’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:152:47: warning: use of old-style cast to ‘bool’ [-Wold-style-cast]
+  152 | #define OPAL_INT_TO_BOOL(VALUE)  ((bool)(VALUE))
+      |                                               ^
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/request_inln.h:200:10: note: in expansion of macro ‘OPAL_INT_TO_BOOL’
+  200 |   return OPAL_INT_TO_BOOL(flag);
+      |          ^~~~~~~~~~~~~~~~
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/request_inln.h: In member function ‘virtual bool MPI::Request::Get_status(MPI::Status&) const’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:152:47: warning: use of old-style cast to ‘bool’ [-Wold-style-cast]
+  152 | #define OPAL_INT_TO_BOOL(VALUE)  ((bool)(VALUE))
+      |                                               ^
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/request_inln.h:327:12: note: in expansion of macro ‘OPAL_INT_TO_BOOL’
+  327 |     return OPAL_INT_TO_BOOL(flag);
+      |            ^~~~~~~~~~~~~~~~
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/request_inln.h: In member function ‘virtual bool MPI::Request::Get_status() const’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:152:47: warning: use of old-style cast to ‘bool’ [-Wold-style-cast]
+  152 | #define OPAL_INT_TO_BOOL(VALUE)  ((bool)(VALUE))
+      |                                               ^
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/request_inln.h:338:12: note: in expansion of macro ‘OPAL_INT_TO_BOOL’
+  338 |     return OPAL_INT_TO_BOOL(flag);
+      |            ^~~~~~~~~~~~~~~~
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/comm_inln.h: In member function ‘virtual bool MPI::Comm::Iprobe(int, int, MPI::Status&) const’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:152:47: warning: use of old-style cast to ‘bool’ [-Wold-style-cast]
+  152 | #define OPAL_INT_TO_BOOL(VALUE)  ((bool)(VALUE))
+      |                                               ^
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/comm_inln.h:128:10: note: in expansion of macro ‘OPAL_INT_TO_BOOL’
+  128 |   return OPAL_INT_TO_BOOL(t);
+      |          ^~~~~~~~~~~~~~~~
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/comm_inln.h: In member function ‘virtual bool MPI::Comm::Iprobe(int, int) const’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:152:47: warning: use of old-style cast to ‘bool’ [-Wold-style-cast]
+  152 | #define OPAL_INT_TO_BOOL(VALUE)  ((bool)(VALUE))
+      |                                               ^
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/comm_inln.h:136:10: note: in expansion of macro ‘OPAL_INT_TO_BOOL’
+  136 |   return OPAL_INT_TO_BOOL(t);
+      |          ^~~~~~~~~~~~~~~~
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/comm_inln.h: In member function ‘virtual bool MPI::Comm::Is_inter() const’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:152:47: warning: use of old-style cast to ‘bool’ [-Wold-style-cast]
+  152 | #define OPAL_INT_TO_BOOL(VALUE)  ((bool)(VALUE))
+      |                                               ^
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/comm_inln.h:299:10: note: in expansion of macro ‘OPAL_INT_TO_BOOL’
+  299 |   return OPAL_INT_TO_BOOL(t);
+      |          ^~~~~~~~~~~~~~~~
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:272,
+                 from /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h:2887,
+                 from MMA/MMA.h:4,
+                 from MTO_SolidDisplacement.C:8:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/comm_inln.h: In static member function ‘static MPI::Intercomm MPI::Comm::Join(int)’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/comm_inln.h:490:30: warning: use of old-style cast to ‘int’ [-Wold-style-cast]
+  490 |   (void) MPI_Comm_join((int) fd, &newcomm);
+      |                              ^~
+      |                        --------
+      |                        static_cast<int> ( fd)
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h:2887,
+                 from MMA/MMA.h:4,
+                 from MTO_SolidDisplacement.C:8:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/comm_inln.h: In member function ‘virtual bool MPI::Comm::Get_attr(int, void*) const’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:152:47: warning: use of old-style cast to ‘bool’ [-Wold-style-cast]
+  152 | #define OPAL_INT_TO_BOOL(VALUE)  ((bool)(VALUE))
+      |                                               ^
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/comm_inln.h:635:10: note: in expansion of macro ‘OPAL_INT_TO_BOOL’
+  635 |   return OPAL_INT_TO_BOOL(flag);
+      |          ^~~~~~~~~~~~~~~~
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:272,
+                 from /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h:2887,
+                 from MMA/MMA.h:4,
+                 from MTO_SolidDisplacement.C:8:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/comm_inln.h: In static member function ‘static int MPI::Comm::DUP_FN(const MPI::Comm&, int, void*, void*, void*, bool&)’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/comm_inln.h:665:22: warning: use of old-style cast to ‘int’ [-Wold-style-cast]
+  665 |         int f = (int)flag;
+      |                      ^~~~
+      |                 ---------
+      |                 static_cast<int> (flag)
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h:2887,
+                 from MMA/MMA.h:4,
+                 from MTO_SolidDisplacement.C:8:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:152:47: warning: use of old-style cast to ‘bool’ [-Wold-style-cast]
+  152 | #define OPAL_INT_TO_BOOL(VALUE)  ((bool)(VALUE))
+      |                                               ^
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/comm_inln.h:669:16: note: in expansion of macro ‘OPAL_INT_TO_BOOL’
+  669 |         flag = OPAL_INT_TO_BOOL(f);
+      |                ^~~~~~~~~~~~~~~~
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:272,
+                 from /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h:2887,
+                 from MMA/MMA.h:4,
+                 from MTO_SolidDisplacement.C:8:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/comm_inln.h:674:39: warning: use of old-style cast to ‘int*’ [-Wold-style-cast]
+  674 |                                (int*)&flag);
+      |                                       ^~~~
+      |                                -----------
+      |                                reinterpret_cast<int*> (&flag)
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:273,
+                 from /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h:2887,
+                 from MMA/MMA.h:4,
+                 from MTO_SolidDisplacement.C:8:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/intracomm_inln.h: In member function ‘virtual MPI::Cartcomm MPI::Intracomm::Create_cart(int, const int*, const bool*, bool) const’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/intracomm_inln.h:105:37: warning: use of old-style cast to ‘int’ [-Wold-style-cast]
+  105 |     int_periods[i] = (int) periods[i];
+      |                                     ^
+      |                      ----------------
+      |                      static_cast<int> ( periods[i])
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/intracomm_inln.h:109:41: warning: use of old-style cast to ‘int’ [-Wold-style-cast]
+  109 |                       int_periods, (int)reorder, &newcomm);
+      |                                         ^~~~~~~
+      |                                    ------------
+      |                                    static_cast<int> (reorder)
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/intracomm_inln.h: In member function ‘virtual MPI::Graphcomm MPI::Intracomm::Create_graph(int, const int*, const int*, bool) const’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/intracomm_inln.h:120:57: warning: use of old-style cast to ‘int’ [-Wold-style-cast]
+  120 |                          const_cast<int *>(edges), (int)reorder, &newcomm);
+      |                                                         ^~~~~~~
+      |                                                    ------------
+      |                                                    static_cast<int> (reorder)
+In file included from MMA/MMA.h:4,
+                 from MTO_SolidDisplacement.C:8:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/intracomm_inln.h: In member function ‘virtual MPI::Intercomm MPI::Intracomm::Spawn(const char*, const char**, int, const MPI::Info&, int) const’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h:524:43: warning: use of old-style cast to ‘int*’ [-Wold-style-cast]
+  524 | #define MPI_ERRCODES_IGNORE      ((int *) 0)           /* don't return error codes */
+      |                                           ^
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/intracomm_inln.h:161:32: note: in expansion of macro ‘MPI_ERRCODES_IGNORE’
+  161 |                         (int *)MPI_ERRCODES_IGNORE);
+      |                                ^~~~~~~~~~~~~~~~~~~
+/usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h:524:44: warning: use of old-style cast to ‘int*’ [-Wold-style-cast]
+  524 | #define MPI_ERRCODES_IGNORE      ((int *) 0)           /* don't return error codes */
+      |                                            ^
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/intracomm_inln.h:161:32: note: in expansion of macro ‘MPI_ERRCODES_IGNORE’
+  161 |                         (int *)MPI_ERRCODES_IGNORE);
+      |                                ^~~~~~~~~~~~~~~~~~~
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/intracomm_inln.h: In member function ‘virtual MPI::Intercomm MPI::Intracomm::Spawn_multiple(int, const char**, const char***, const int*, const MPI::Info*, int)’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h:524:43: warning: use of old-style cast to ‘int*’ [-Wold-style-cast]
+  524 | #define MPI_ERRCODES_IGNORE      ((int *) 0)           /* don't return error codes */
+      |                                           ^
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/intracomm_inln.h:194:54: note: in expansion of macro ‘MPI_ERRCODES_IGNORE’
+  194 |                           mpi_comm, &newcomm, (int *)MPI_ERRCODES_IGNORE);
+      |                                                      ^~~~~~~~~~~~~~~~~~~
+/usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h:524:44: warning: use of old-style cast to ‘int*’ [-Wold-style-cast]
+  524 | #define MPI_ERRCODES_IGNORE      ((int *) 0)           /* don't return error codes */
+      |                                            ^
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/intracomm_inln.h:194:54: note: in expansion of macro ‘MPI_ERRCODES_IGNORE’
+  194 |                           mpi_comm, &newcomm, (int *)MPI_ERRCODES_IGNORE);
+      |                                                      ^~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:274,
+                 from /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h:2887,
+                 from MMA/MMA.h:4,
+                 from MTO_SolidDisplacement.C:8:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/topology_inln.h: In member function ‘virtual void MPI::Cartcomm::Get_topo(int, int*, bool*, int*) const’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/topology_inln.h:73:36: warning: use of old-style cast to ‘int’ [-Wold-style-cast]
+   73 |     int_periods[i] = (int)periods[i];
+      |                                    ^
+      |                      ---------------
+      |                      static_cast<int> (periods[i])
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h:2887,
+                 from MMA/MMA.h:4,
+                 from MTO_SolidDisplacement.C:8:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:152:47: warning: use of old-style cast to ‘bool’ [-Wold-style-cast]
+  152 | #define OPAL_INT_TO_BOOL(VALUE)  ((bool)(VALUE))
+      |                                               ^
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/topology_inln.h:77:18: note: in expansion of macro ‘OPAL_INT_TO_BOOL’
+   77 |     periods[i] = OPAL_INT_TO_BOOL(int_periods[i]);
+      |                  ^~~~~~~~~~~~~~~~
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:274,
+                 from /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h:2887,
+                 from MMA/MMA.h:4,
+                 from MTO_SolidDisplacement.C:8:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/topology_inln.h: In member function ‘virtual MPI::Cartcomm MPI::Cartcomm::Sub(const bool*) const’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/topology_inln.h:110:44: warning: use of old-style cast to ‘int’ [-Wold-style-cast]
+  110 |     int_remain_dims[i] = (int)remain_dims[i];
+      |                                            ^
+      |                          -----
+      |                          static_cast<int> ( )
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/topology_inln.h: In member function ‘virtual int MPI::Cartcomm::Map(int, const int*, const bool*) const’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/topology_inln.h:123:37: warning: use of old-style cast to ‘int’ [-Wold-style-cast]
+  123 |     int_periods[i] = (int) periods[i];
+      |                                     ^
+      |                      ----------------
+      |                      static_cast<int> ( periods[i])
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:275,
+                 from /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h:2887,
+                 from MMA/MMA.h:4,
+                 from MTO_SolidDisplacement.C:8:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/intercomm_inln.h: In member function ‘virtual MPI::Intracomm MPI::Intercomm::Merge(bool) const’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/intercomm_inln.h:58:44: warning: use of old-style cast to ‘int’ [-Wold-style-cast]
+   58 |   (void)MPI_Intercomm_merge(mpi_comm, (int)high, &newcomm);
+      |                                            ^~~~
+      |                                       ---------
+      |                                       static_cast<int> (high)
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/intercomm_inln.h: In member function ‘virtual MPI::Intercomm MPI::Intercomm::Create(const MPI::Group&) const’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/intercomm_inln.h:71:48: warning: use of old-style cast to ‘MPI_Group’ {aka ‘struct ompi_group_t*’} [-Wold-style-cast]
+   71 |   (void) MPI_Comm_create(mpi_comm, (MPI_Group) group, &newcomm);
+      |                                                ^~~~~
+      |                                    -----------------
+      |                                    static_cast<MPI_Group> ( group)
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:277,
+                 from /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h:2887,
+                 from MMA/MMA.h:4,
+                 from MTO_SolidDisplacement.C:8:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h: In member function ‘bool MPI::Op::operator==(const MPI::Op&)’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h:92:74: warning: use of old-style cast to ‘bool’ [-Wold-style-cast]
+   92 | MPI::Op::operator== (const MPI::Op &a) { return (bool)(mpi_op == a.mpi_op); }
+      |                                                                          ^
+      |                                                 ------
+      |                                                 static_cast<bool> (       )
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h: In member function ‘bool MPI::Op::operator!=(const MPI::Op&)’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h:95:67: warning: use of old-style cast to ‘bool’ [-Wold-style-cast]
+   95 | MPI::Op::operator!= (const MPI::Op &a) { return (bool)!(*this == a); }
+      |                                                                   ^
+      |                                                 ------
+      |                                                 static_cast<bool> ()
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h: In member function ‘virtual void MPI::Op::Init(void (*)(const void*, void*, int, const MPI::Datatype&), bool)’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h:121:46: warning: use of old-style cast to ‘void (*)(void*, void*, int*, struct ompi_datatype_t**)’ [-Wold-style-cast]
+  121 |     (void)MPI_Op_create((MPI_User_function*) ompi_mpi_cxx_op_intercept,
+      |                                              ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |                         -
+      |                         reinterpret_cast<  -
+      |                                            > (                        )
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h:121:25: warning: cast between incompatible function types from ‘void (*)(void*, void*, int*, ompi_datatype_t**, void (*)(void*, void*, int*, ompi_datatype_t**))’ to ‘void (*)(void*, void*, int*, ompi_datatype_t**)’ [-Wcast-function-type]
+  121 |     (void)MPI_Op_create((MPI_User_function*) ompi_mpi_cxx_op_intercept,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h:122:31: warning: use of old-style cast to ‘int’ [-Wold-style-cast]
+  122 |                         (int) commute, &mpi_op);
+      |                               ^~~~~~~
+      |                         -------------
+      |                         static_cast<int> ( commute)
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h:123:59: warning: use of old-style cast to ‘void (*)(void*, void*, int*, struct ompi_datatype_t**)’ [-Wold-style-cast]
+  123 |     ompi_op_set_cxx_callback(mpi_op, (MPI_User_function*) func);
+      |                                                           ^~~~
+      |                                      -
+      |                                      reinterpret_cast<  -
+      |                                                         > (   )
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h:123:38: warning: cast between incompatible function types from ‘void (*)(const void*, void*, int, const MPI::Datatype&)’ to ‘void (*)(void*, void*, int*, ompi_datatype_t**)’ [-Wcast-function-type]
+  123 |     ompi_op_set_cxx_callback(mpi_op, (MPI_User_function*) func);
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h: In member function ‘virtual bool MPI::Op::Is_commutative() const’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h:148:19: warning: use of old-style cast to ‘bool’ [-Wold-style-cast]
+  148 |     return (bool) commute;
+      |                   ^~~~~~~
+      |            --------------
+      |            static_cast<bool> ( commute)
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h:2887,
+                 from MMA/MMA.h:4,
+                 from MTO_SolidDisplacement.C:8:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/status_inln.h: In member function ‘virtual bool MPI::Status::Is_cancelled() const’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:152:47: warning: use of old-style cast to ‘bool’ [-Wold-style-cast]
+  152 | #define OPAL_INT_TO_BOOL(VALUE)  ((bool)(VALUE))
+      |                                               ^
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/status_inln.h:38:10: note: in expansion of macro ‘OPAL_INT_TO_BOOL’
+   38 |   return OPAL_INT_TO_BOOL(t);
+      |          ^~~~~~~~~~~~~~~~
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:279,
+                 from /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h:2887,
+                 from MMA/MMA.h:4,
+                 from MTO_SolidDisplacement.C:8:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/status_inln.h: In member function ‘virtual void MPI::Status::Set_cancelled(bool)’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/status_inln.h:103:49: warning: use of old-style cast to ‘int’ [-Wold-style-cast]
+  103 |     MPI_Status_set_cancelled(&mpi_status, (int) flag);
+      |                                                 ^~~~
+      |                                           ----------
+      |                                           static_cast<int> ( flag)
+In file included from /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h:2887,
+                 from MMA/MMA.h:4,
+                 from MTO_SolidDisplacement.C:8:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/info_inln.h: In member function ‘virtual bool MPI::Info::Get(const char*, int, char*) const’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:152:47: warning: use of old-style cast to ‘bool’ [-Wold-style-cast]
+  152 | #define OPAL_INT_TO_BOOL(VALUE)  ((bool)(VALUE))
+      |                                               ^
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/info_inln.h:54:10: note: in expansion of macro ‘OPAL_INT_TO_BOOL’
+   54 |   return OPAL_INT_TO_BOOL(flag);
+      |          ^~~~~~~~~~~~~~~~
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/info_inln.h: In member function ‘virtual bool MPI::Info::Get_valuelen(const char*, int&) const’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:152:47: warning: use of old-style cast to ‘bool’ [-Wold-style-cast]
+  152 | #define OPAL_INT_TO_BOOL(VALUE)  ((bool)(VALUE))
+      |                                               ^
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/info_inln.h:76:10: note: in expansion of macro ‘OPAL_INT_TO_BOOL’
+   76 |   return OPAL_INT_TO_BOOL(flag);
+      |          ^~~~~~~~~~~~~~~~
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/win_inln.h: In member function ‘virtual bool MPI::Win::Test() const’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:152:47: warning: use of old-style cast to ‘bool’ [-Wold-style-cast]
+  152 | #define OPAL_INT_TO_BOOL(VALUE)  ((bool)(VALUE))
+      |                                               ^
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/win_inln.h:152:10: note: in expansion of macro ‘OPAL_INT_TO_BOOL’
+  152 |   return OPAL_INT_TO_BOOL(flag);
+      |          ^~~~~~~~~~~~~~~~
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/win_inln.h: In member function ‘bool MPI::Win::Get_attr(const MPI::Win&, int, void*) const’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:152:47: warning: use of old-style cast to ‘bool’ [-Wold-style-cast]
+  152 | #define OPAL_INT_TO_BOOL(VALUE)  ((bool)(VALUE))
+      |                                               ^
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/win_inln.h:262:10: note: in expansion of macro ‘OPAL_INT_TO_BOOL’
+  262 |   return OPAL_INT_TO_BOOL(ret);
+      |          ^~~~~~~~~~~~~~~~
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/win_inln.h: In member function ‘bool MPI::Win::Get_attr(int, void*) const’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:152:47: warning: use of old-style cast to ‘bool’ [-Wold-style-cast]
+  152 | #define OPAL_INT_TO_BOOL(VALUE)  ((bool)(VALUE))
+      |                                               ^
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/win_inln.h:272:10: note: in expansion of macro ‘OPAL_INT_TO_BOOL’
+  272 |   return OPAL_INT_TO_BOOL(ret);
+      |          ^~~~~~~~~~~~~~~~
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/file_inln.h: In member function ‘bool MPI::File::Get_atomicity() const’:
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:152:47: warning: use of old-style cast to ‘bool’ [-Wold-style-cast]
+  152 | #define OPAL_INT_TO_BOOL(VALUE)  ((bool)(VALUE))
+      |                                               ^
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/file_inln.h:43:10: note: in expansion of macro ‘OPAL_INT_TO_BOOL’
+   43 |   return OPAL_INT_TO_BOOL(flag);
+      |          ^~~~~~~~~~~~~~~~
+MTO_SolidDisplacement.C: At global scope:
+MTO_SolidDisplacement.C:3:13: warning: ‘help’ defined but not used [-Wunused-variable]
+    3 | static char help[] = "topology optimization of linear elasticity problem\n";
+      |             ^~~~
+In file included from sensitivity.H:5,
+                 from MTO_SolidDisplacement.C:26:
+filter_chainrule.H: In function ‘int main(int, char**)’:
+filter_chainrule.H:15:50: warning: ‘eta5’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   15 |        drho[i]=del*Foam::exp(-del*(xp[i]-eta5)/(1-eta5))+Foam::exp(-del);
+      |                                                ~~^~~~~~
+In file included from MTO_SolidDisplacement.C:19:
+opt_initialization.H:8:23: note: ‘eta5’ was declared here
+    8 | scalar n(0),N(0),eta0,eta5,eta1,y0,y5;
+      |                       ^~~~
+mpic++ -std=c++14 -m64 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -I. -IsolidDisplacementThermo -IderivedFvPatchFields/tractionDisplacement -IderivedFvPatchFields/hydrostaticDisplacement -I/opt/openfoam10/src/physicalProperties/lnInclude -I/opt/openfoam10/src/thermophysicalModels/basic/lnInclude -I/opt/openfoam10/src/thermophysicalModels/solidThermo/lnInclude -I/opt/openfoam10/src/finiteVolume/lnInclude -I/opt/openfoam10/src/meshTools/lnInclude -IlnInclude -I. -I/opt/openfoam10/src/OpenFOAM/lnInclude -I/opt/openfoam10/src/OSspecific/POSIX/lnInclude   -fPIC -fuse-ld=bfd -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/MMA/MMA.o Make/linux64GccDPInt32Opt/tractionDisplacement/tractionDisplacementFvPatchVectorField.o Make/linux64GccDPInt32Opt/MTO_SolidDisplacement.o -L/opt/openfoam10/platforms/linux64GccDPInt32Opt/lib \
+    -lfiniteVolume -lsolidThermo -lsolidDisplacementThermo -lfvModels -lfvConstraints -lmeshTools -lOpenFOAM -ldl  \
+     -lm -o /home/wyy/OpenFOAM/wyy-10/platforms/linux64GccDPInt32Opt/bin/MTO_SolidDisplacement
